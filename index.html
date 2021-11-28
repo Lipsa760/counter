@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <script src="https://kit.fontawesome.com/bb5fe33e4d.js" crossorigin="anonymous"></script>
+    <style>
+      body{
+        background-color: #EEEBDD;
+      }
+        #bg{
+        margin-top: 10%;
+        margin-left: 39%;
+        width: 400px;
+        height: 200px;
+        background-color: #D8B6A4;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+      #display {
+        width: 100%;
+        height:60px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2em;
+        color: white;
+        background-color:#630000;
+      }
+      .incdec{
+          width: 30%;
+          height: 100px;
+          margin: 2px;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2em;
+          background-color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+      <div style="text-align: center;"><h1>Counter</h1></div>
+    <div id="bg">
+      <div id="display">0</div>   
+        <div class="incdec" data-val="+"><i class="fas fa-plus"></i></div>
+        <div class="incdec" data-val="-"><i class="fas fa-minus"></i></div>
+        <div class="incdec" data-val="reset">Reset</div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
